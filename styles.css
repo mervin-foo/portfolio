@@ -1,0 +1,931 @@
+/* Mervin's Glow = #FFCC52 */
+
+
+/* Navigation Bar */
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+::selection {
+  color: #FFCC52;
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  min-width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 90%;
+  position: fixed;
+  z-index: 3;
+  overflow: hidden;
+
+}
+
+.bg {
+  background-color: #FFCC52;
+}
+
+.bg.scrolled {
+background-color: black;
+}
+
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover
+{
+color: #FFCC52;
+}
+
+.navContainer{
+  width: 50vw;
+  height: 8vh;
+  overflow-y: hidden;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+}
+
+.topIcon {
+  width: 17px;
+}
+
+.navTop {
+  letter-spacing: 1.5px;
+  display: inline-flex;
+  font-size: 0.77rem;
+  height: 8vh;
+  align-items: center;
+}
+
+.navTop a {
+
+    text-decoration: none;
+    color: white;
+    padding-left: 7px;
+}
+
+.navTop a:hover {
+  color: black;
+}
+
+.navLinks {
+  display: inline-flex;
+    justify-content: space-around;
+    font-size: 0.77rem;
+    height: 8vh;
+    align-items: center;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.navLinks a:hover {
+  color: black;
+}
+
+.navLinks li {
+  list-style: none;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 20px;
+  height: 1.5px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.5s;
+transition-timing-function: ease-out;
+}
+
+/* Banner */
+.Banner {
+  display: flex;
+  background-image: url("Images/Mervin Grey.png");
+  height: 55vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 100%;
+  position: relative;
+  align-items: center;
+  margin: auto;
+  overflow-y: hidden;
+}
+
+.Container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50vw;
+  height: 55vh;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.leftCon {
+  display: grid;
+  height: 55vh;
+  overflow-y: hidden;
+}
+
+.Hey{
+  display: grid;
+  height: 27.5vh;
+}
+
+@keyframes fadeHey {
+  from {opacity: 0}
+  to {opacity: 100}
+}
+
+.heyDesk{
+  position: absolute;
+  height: 15vh;
+  top: 17vh;
+  left: 25.2vw;
+  z-index: 2;
+  animation-name: fadeHey;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+
+.heyMobile {
+  display: none;
+}
+
+@keyframes fadeContact {
+  from {opacity: 0}
+  to {opacity: 100}
+}
+
+.Contact{
+  display: grid;
+  height: 27.5vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: fadeContact;
+  animation-duration: 1s;
+  animation-delay: 2.3s;
+  animation-timing-function: ease-in-out;
+  position: absolute;
+  top: 27.7vh;
+  left: 27vw;
+}
+.email {
+  padding-bottom: 3vh;
+}
+    .email:before {
+    content: "";
+    background: url("Images/email.svg") no-repeat 50% 50%/contain;
+    vertical-align: middle;
+    display: inline-block;
+    height: 3.5vh;
+    width: 3.5vh;
+    margin-right: 0.3vw;
+    }
+
+    .zoom:before {
+    content: "";
+    background: url("Images/zoom.svg") no-repeat 50% 50%/contain;
+    display: inline-block;
+    vertical-align: middle;
+    height: 3.5vh;
+    width: 3.5vh;
+    margin-right: 0.3vw;
+    }
+
+.contactM{
+  display: none;
+}
+
+.emailM{
+  display: none;
+}
+
+.zoomM{
+  display: none;
+}
+
+.rightCon {
+  display: grid;
+  height: 55vh;
+}
+
+@keyframes moveMervin {
+from {opacity: 0; left:60vw;}
+to {opacity: 100%; left: 55vw;}
+}
+
+.rightCon img {
+  height: 50vh;
+  position: absolute;
+  bottom: 0;
+  left: 55vw;
+  animation-name: moveMervin;
+  animation-timing-function: ease-out;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+.bannerDiv {
+  height: 0.5vh;
+  margin: 0 auto;
+  background-color: #FFCC52;
+}
+
+/* About Me */
+.About{
+  height: auto;
+  width: 100vw;
+  background-color: white;
+  overflow-y: hidden;
+}
+
+
+.AboutText {
+justify-content: center;
+align-items: center;
+width: 50vw;
+height: auto;
+text-align: center;
+margin: auto;
+padding: 3.5vh 3.0vh;
+padding-right: 5vw;
+overflow-y: hidden;
+}
+
+.AboutText h1 {
+font-family: "Oswald", Impact;
+font-size: 2.5rem;
+color: #FFCC52;
+
+}
+
+.AboutText p{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: black;
+}
+
+/* Resume */
+.Resume {
+height: auto;
+background-color: #FFCC52;
+
+}
+
+.resumeCon {
+width: 50vw;
+height: auto;
+margin: 0 auto;
+overflow-y: hidden;
+color: white;
+}
+
+#resumeDiv {
+  height: 0.8vh;
+  width: 8.3vw;
+  background-color: #FFCC52;
+}
+
+.resumeh1 {
+  font-family: "Oswald", Impact;
+  font-size: 1.77rem;
+  padding: 2.22vh 0 2.22vh 0;
+  color: #FFCC52;
+}
+
+.resumeh2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.11rem;
+  font-weight: 600;
+  color: black;
+  line-height: 3.8vh;
+  width: 12vw;
+  overflow: visible;
+  display: inline;
+}
+.resumeh2 span {
+  background-color: #FFCC52;
+  padding-left: 1vw;
+  padding-right: 1vw;
+
+}
+
+#resuHigh {
+  color: #FFCC52;
+}
+
+.resumeDetails {
+  padding-bottom: 2.22vh;
+  color: white;
+}
+  /* Proficiencies */
+.proGridM {
+  display: none;
+}
+
+  .proGrid {
+    padding: 2.22vh;
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    color: white;
+  }
+
+  .proGrid p{
+    padding-bottom: 2.22vh;
+  }
+
+  .resSpacing {
+    height: 2vh;
+  }
+
+    /* Education */
+  .eduGrid {
+    padding: 2.22vh;
+    display: grid;
+    height: auto;
+    grid-template-columns: 3fr 1fr;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+  }
+
+  .eduGridM{
+    display: none;
+  }
+
+.List {
+  padding-left: 0;
+
+}
+
+.List li{
+font-size: 0.8rem;
+display: list-item;
+list-style-type: circle;
+  margin-bottom: 5px;
+}
+
+
+
+    /* Work Experience */
+    .workGrid {
+      padding: 2.22vh;
+      display: grid;
+      height: auto;
+      grid-template-columns: 3fr 1fr;
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.9rem;
+    }
+
+    .workGridM{
+      display: none;
+    }
+
+    .Resume {
+    height: auto;
+    background-color: black;
+
+    }
+
+    .resumeCon {
+    width: 50vw;
+    height: auto;
+    margin: 0 auto;
+    overflow-y: hidden;
+    }
+
+    #resumeDiv {
+      height: 0.8vh;
+      width: 8.3vw;
+      background-color: #FFCC52;
+    }
+
+/* My Work*/
+.myWork {
+height: auto;
+background-color: #FFCC52;
+
+}
+
+.workCon {
+width: 50vw;
+height: auto;
+margin: 0 auto;
+overflow-y: hidden;
+padding-bottom: 4.44vh;
+}
+
+#workDiv {
+  height: 0.8vh;
+  width: 8.3vw;
+  margin: auto;
+  background-color: black;
+}
+
+.workh1 {
+  font-family: "Oswald", Impact;
+  font-size: 1.77rem;
+  padding: 2.22vh 0 2.22vh 0;
+  color: black;
+  text-align: center;
+}
+
+.workRow1 {
+  height: auto;
+  display: block;
+  text-align: center;
+}
+
+.workRow2 {
+  height: auto;
+  display: block;
+  text-align: center;
+}
+
+.workBox {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  background-color: none;
+  border: solid black 1.77px;
+  width: 15vw;
+  padding: 10px;
+  margin: 7px 1.77px 1.77px 1.77px;
+  display: inline-block;
+  justify-content: center;
+}
+
+.workBox:hover {
+  color: #FFCC52;
+  background-color: black;
+  border-style: none;
+}
+
+/* Portfolio*/
+.Portfolio {
+height: auto;
+background-color: Black;
+}
+
+#portDiv {
+  height: 0.8vh;
+    width: 13.6vw;
+  margin: auto;
+  background-color: #FFCC52;
+}
+
+.portfolioCon {
+width: 50vw;
+height: auto;
+margin: 0 auto;
+overflow-y: hidden;
+padding-bottom: 4.44vh;
+}
+
+.portText {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+}
+
+.portHead {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  padding-top: 2.22vh;
+  color: #FFCC52;
+  text-align: center;
+}
+.portGrid {
+  padding-top: 2.22vh;
+  display: grid;
+  height: auto;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+}
+.portImg {
+  width: 100%;
+  margin-bottom: 2.22vh;
+}
+
+.portVid {
+  width: 100%;
+  margin-bottom: 2.22vh;
+}
+
+
+.portTitle {
+  padding-left: 2.2vw;
+position: relative;
+color: #FFCC52;
+text-align: left;
+top: 10%;
+bottom: 10%;
+
+
+}
+
+.portDesc {
+  padding-left: 2.2vw;
+    padding-right: 2.2vw;
+position: relative;
+top: 10%;
+bottom: 10%;
+text-align: justify;
+color: White;
+}
+
+.shotAt {
+  color: #FFCC52;
+  font-size: 0.8rem;
+  margin: 2% 5% 0 0;
+  padding-left: 2.22vw;
+
+}
+
+
+.Footer {
+  height: 8vh;
+  background-color: #FFCC52;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  padding: 2vh 2vh;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.Footer p {
+  padding-top: 0.3vh;
+}
+
+/* ----------------------------------------------------------------------------*/
+
+
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+
+
+  .navLinks {
+    display: inline-flex;
+      font-size: 0.77rem;
+      width: 50%;
+      height: 8vh;
+  justify-content: space-around;
+  position: absolute;
+  left: 45%;
+  }
+
+
+.navContainer {
+  width: 100vw;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navTop {
+  position: absolute;
+  left: 10vw;
+}
+
+.Banner {
+  height: 50vh;
+}
+
+.Container {
+  height: inherit;
+}
+
+.leftCon {
+  height: auto;
+  width: 40vw;
+}
+
+.heyDesk{
+  visibility: hidden;
+}
+
+@keyframes fadeHeyM {
+  from {opacity: 0}
+  to {opacity: 100}
+}
+
+.heyMobile{
+  display: block;
+  position: absolute;
+  height: 12.7vh;
+  left: 10vw;
+  animation-fill-mode: forwards;
+  animation-name: fadeHeyM;
+  animation-duration: 1s;
+  animation-delay: 2.3s;
+  animation-timing-function: ease-in-out;
+  opacity: 0%;
+}
+
+
+
+
+.contact{
+  display: none;
+}
+
+li.email
+{
+  display: none;
+}
+
+  li.zoom
+  {
+    display: none;
+  }
+
+  @keyframes fadeContactM {
+    from {opacity: 0}
+    to {opacity: 100}
+  }
+
+  .ContactM {
+    opacity: 0%;
+    display: block;
+    position: absolute;
+    top: 37vh;
+    left: 10vw;
+    width: auto;
+    height: auto;
+    animation-fill-mode: forwards;
+    animation-name: fadeContactM;
+    animation-duration: 1s;
+    animation-delay: 3.3s;
+    animation-timing-function: ease-in-out;
+  }
+
+  .emailM{
+  display: block;
+    height: 3vh;
+    margin-bottom: 1.77vh;
+  }
+
+  .emailM:hover {
+    height: 4vh;
+  }
+
+  .zoomM{
+    display: block;
+    height: 3vh;
+  }
+
+  .zoomM:hover {
+    height: 4vh;
+  }
+
+.rightCon {
+  height: inherit;
+  width: 60vw;
+  justify-content: center;
+}
+
+@keyframes moveMervin {
+from {opacity: 0; left:60vw;}
+to {opacity: 100%; left: 40vw;}
+}
+
+.rightCon img {
+  height: 45vh;
+  overflow-y: hidden;
+}
+
+.About {
+  height: auto;
+}
+
+.AboutText {
+  width: 100vw;
+  height: auto;
+}
+
+.AboutText h1 {
+font-family: "Oswald", Impact;
+font-size: 1.5rem;
+color: #FFCC52;
+}
+
+.AboutText p{
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  color: black;
+}
+
+/* Resume */
+
+.resumeCon {
+width: 100vw;
+margin-bottom: 5vh;
+}
+
+#resumeDiv {
+  width: 25vw;;
+}
+
+.resumeh1 {
+  padding-left: 5vw;
+}
+
+.resumeh2 {
+  margin-left: 5vw;
+}
+
+.proGrid {
+  display: none;
+}
+
+.proGridM {
+  display: block;
+  padding: 2.22vh;
+  display: grid;
+  height: auto;
+  grid-template-columns: 1fr 1.5fr 1.5fr;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.eduGrid{
+  display: none;
+}
+
+.eduGridM {
+  display: block;
+  padding: 2.22vh;
+  display: grid;
+  height: auto;
+  grid-template-columns: 1fr;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+}
+
+.workGrid {
+  display: none;
+}
+
+.workGridM {
+  display: block;
+  padding: 2.22vh;
+  display: grid;
+  height: auto;
+  grid-template-columns: 1fr;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+}
+
+/*Work*/
+
+
+.workCon {
+width: 100vw;
+height: auto;
+margin: 0 auto;
+overflow-y: hidden;
+padding-bottom: 4.44vh;
+}
+
+#workDiv {
+  height: 0.8vh;
+  width: 26.6vw;
+  margin: auto;
+  background-color: #FFCC52;
+}
+
+
+.workBox {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.77rem;
+  background-color: none;
+  border: solid black 1.77px;
+  width: 30vw;
+  padding: 10px;
+  margin: 7px 1.77px 1.77px 1.77px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+
+/* Portfolio*/
+.Portfolio {
+height: auto;
+background-color: Black;
+}
+
+.portfolioCon {
+width: 100vw;
+height: auto;
+padding-bottom: 4.44vh;
+}
+
+.portText {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  padding-bottom: 4.44vh;
+  height: auto;
+
+}
+
+.portHead {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  padding-top: 2.22vh;
+  color: #FFCC52;
+  text-align: center;
+  padding-bottom: 2.22vh;
+}
+.portGrid {
+  padding-top: 2.22vh;
+  display: grid;
+  height: auto;
+  grid-template-columns: 1fr;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+}
+.portImg {
+  width: 90%;
+  margin: 5%;
+
+}
+
+.portVid {
+  width: 90%;
+  margin: 5%;
+}
+
+.portTitle {
+color: #FFCC52;
+text-align: left;
+margin: 2% 5% 2% 5%;
+  font-size: 0.8rem;
+  top: 0%;
+  bottom: 0%;
+
+
+}
+
+.portDesc {
+    font-size: 0.8rem;
+text-align: justify;
+color: White;
+margin: 2% 5% 10% 5%;
+display: block;
+top: 0%;
+bottom: 0%;
+
+}
+.shotAt {
+  color: #FFCC52;
+  font-size: 0.8rem;
+  margin: 0 5% 0 5%;
+  padding-left: 2.22vw;
+  position: relative;
+  bottom: 30%;
+}
+
+
+}
