@@ -218,7 +218,7 @@ transition-timing-function: ease-out;
 
     .zoom:before {
     content: "";
-    background: url("Images/zoom.svg") no-repeat 50% 50%/contain;
+    background: url("Images/zoom.png") no-repeat 50% 50%/contain;
     display: inline-block;
     vertical-align: middle;
     height: 3.5vh;
