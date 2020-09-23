@@ -22,7 +22,7 @@ nav {
   min-height: 8vh;
   min-width: 100%;
   font-family: 'Montserrat', sans-serif;
-  opacity: 90%;
+  opacity: 86%;
   position: fixed;
   z-index: 3;
   overflow: hidden;
@@ -124,7 +124,7 @@ transition-timing-function: ease-out;
 /* Banner */
 .Banner {
   display: flex;
-  background-image: url("Images/Mervin Grey.png");
+  background-image: url("Images/Mervin Grey.jpg");
   height: 55vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -288,7 +288,7 @@ overflow-y: hidden;
 }
 
 .AboutText h1 {
-font-family: "Oswald", Impact;
+font-family: "Century Gothic", Arial Black;
 font-size: 2.5rem;
 color: #FFCC52;
 
@@ -322,7 +322,7 @@ color: white;
 }
 
 .resumeh1 {
-  font-family: "Oswald", Impact;
+  font-family: "Century Gothic", Arial Black;
   font-size: 1.77rem;
   padding: 2.22vh 0 2.22vh 0;
   color: #FFCC52;
@@ -460,7 +460,7 @@ padding-bottom: 4.44vh;
 }
 
 .workh1 {
-  font-family: "Oswald", Impact;
+  font-family: "Century Gothic", Arial Black;
   font-size: 1.77rem;
   padding: 2.22vh 0 2.22vh 0;
   color: black;
@@ -526,7 +526,7 @@ padding-bottom: 4.44vh;
 }
 
 .portHead {
-  font-family: "Oswald", sans-serif;
+  font-family: "Century Gothic", Arial Black;
   font-size: 1.5rem;
   padding-top: 2.22vh;
   color: #FFCC52;
@@ -743,7 +743,7 @@ to {opacity: 100%; left: 40vw;}
 }
 
 .AboutText h1 {
-font-family: "Oswald", Impact;
+font-family: "Century Gothic", Arial Black;
 font-size: 1.5rem;
 color: #FFCC52;
 }
@@ -871,7 +871,7 @@ padding-bottom: 4.44vh;
 }
 
 .portHead {
-  font-family: "Oswald", sans-serif;
+  font-family: "Century Gothic", Arial Black;
   font-size: 1.5rem;
   padding-top: 2.22vh;
   color: #FFCC52;
